@@ -1,0 +1,9 @@
+#+OPTIONS: num:nil h:3
+#+AUTHOR: author
+#+DATE: <2021-03-02 Tue>
+#+DESCRIPTION: This is author's personal blog, welcome!
+#+KEYWORDS: blog
+
+#+BEGIN_meta
+This is author's personal blog, welcome!
+#+END_meta

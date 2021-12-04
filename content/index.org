@@ -1,0 +1,13 @@
+#+STARTUP: showall
+#+TITLE:       My personal website demo
+#+AUTHOR:      author
+#+EMAIL:       hi@example.com
+#+DATE:        <2021-03-02 Tue>
+
+
+Hi all! This is my personal website, welcome!
+
+** Recent posts
+
+- See [[/blog/][more]]...
+

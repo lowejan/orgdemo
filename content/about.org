@@ -1,0 +1,7 @@
+#+STARTUP: showall
+#+TITLE:       About
+#+AUTHOR:      author
+#+EMAIL:       hi@example.com
+#+DATE:        <2021-03-02 Tue>
+
+* This is ABOUT page.
