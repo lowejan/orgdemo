@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2021-12-04 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My first blog post</title>
+<meta name="author" content="author" />
+<meta name="description" content="It's my first blog post." />
+<meta name="keywords" content="blog" />
+<meta name="generator" content="Org Mode" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" href="/css/style.css" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<header id="top" class="status">
+<nav class="menu">
+<a accesskey="H" href="/">Home</a>
+<a accesskey="B" href="/blog/">Blog</a>
+<a accesskey="A" href="/about.html">About</a>
+</nav>
+</header>
+<main id="content" class="content">
+<header>
+<h1 class="title">My first blog post</h1>
+</header><p>
+This is the <a href="https://writequit.org/denver-emacs/presentations/files/example.org.html">example org-mode file</a> used for the Denver Emacs org-mode
+introduction talk. Everything in this talk should work without any custom
+settings or installation with a reasonably recent Emacs version.
+</p>
+
+<p>
+Let&rsquo;s start with a headline, this is kind of like Markdown&rsquo;s # character:
+</p>
+
+<section id="outline-container-org48f999e" class="outline-2">
+<h2 id="org48f999e">This is an example headline</h2>
+<div class="outline-text-2" id="text-org48f999e">
+<p>
+Text can be put into the headline. You can create another headline at the same
+level with another * character
+</p>
+</div>
+</section>
+
+<section id="outline-container-orgc52edfd" class="outline-2">
+<h2 id="orgc52edfd">Another headline</h2>
+<div class="outline-text-2" id="text-orgc52edfd">
+<p>
+Nesting headlines is as easy as adding another start
+</p>
+</div>
+
+<div id="outline-container-orga4b0ba1" class="outline-3">
+<h3 id="orga4b0ba1">Nested headline</h3>
+</div>
+
+<div id="outline-container-org2297da4" class="outline-3">
+<h3 id="org2297da4">Another nested headline</h3>
+<div class="outline-text-3" id="text-org2297da4">
+</div>
+<div id="outline-container-orgee0bfbb" class="outline-4">
+<h4 id="orgee0bfbb">Deeper</h4>
+</div>
+</div>
+
+<div id="outline-container-org545d9d1" class="outline-3">
+<h3 id="org545d9d1">Another headline</h3>
+<div class="outline-text-3" id="text-org545d9d1">
+</div>
+<ul class="org-ul">
+<li><a id="org54e99e0"></a>Deeper&#x2026;<br>
+<ul class="org-ul">
+<li><a id="orgfa4c2d7"></a>Deeper&#x2026;..<br></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+<section id="outline-container-org7ee53fb" class="outline-2">
+<h2 id="org7ee53fb">Basic markup</h2>
+<div class="outline-text-2" id="text-org7ee53fb">
+<p>
+You can really go as deep as you want. This is the general building block for
+org-mode navigation.
+</p>
+
+<p>
+Next, let&rsquo;s talk about some markup
+</p>
+
+<ul class="org-ul">
+<li><span class="underline">underscores let you underline things</span></li>
+<li><b>stars add emphasis</b></li>
+<li><i>slashes are italics</i></li>
+<li><del>pluses are strikethrough</del></li>
+<li><code>equal signs are verbatim text</code></li>
+<li><code>tildes can also be used</code></li>
+</ul>
+
+<p>
+You can generate lists with the <code>-</code> character (seen above), or create numbered
+ones:
+</p>
+
+<ol class="org-ol">
+<li>Number one thing</li>
+<li>Number two thing</li>
+<li>Number three</li>
+</ol>
+</div>
+</section>
+
+<section id="outline-container-orgda28c61" class="outline-2">
+<h2 id="orgda28c61">Showing and hiding headlines</h2>
+<div class="outline-text-2" id="text-orgda28c61">
+<p>
+You can hide the contents of a headline by putting the point (cursor) or it and
+hitting <code>TAB</code>.
+</p>
+
+<p>
+You can also toggle hiding and showing of <b>all</b> headlines with <code>SHIFT-TAB</code>.
+</p>
+</div>
+</section>
+
+<section id="outline-container-org0c8717b" class="outline-2">
+<h2 id="org0c8717b">Tables</h2>
+<div class="outline-text-2" id="text-org0c8717b">
+<p>
+Auto expanding tables are one of the coolest features of org-mode, because
+tables in Markdown just plain suck. In order to create a new table, you can
+start typing it manually, or press <code>C-c |</code>, which will prompt for the table&rsquo;s
+dimensions.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">First Name</th>
+<th scope="col" class="org-left">Last Name</th>
+<th scope="col" class="org-right">Years using Emacs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Lee</td>
+<td class="org-left">Hinman</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-left">Mike</td>
+<td class="org-left">Hunsinger</td>
+<td class="org-right">2</td>
+</tr>
+
+<tr>
+<td class="org-left">Daniel</td>
+<td class="org-left">Glauser</td>
+<td class="org-right">4</td>
+</tr>
+
+<tr>
+<td class="org-left">Really-long-first-name-guy</td>
+<td class="org-left">long-last-name-pers</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="outline-container-orgdbe466b" class="outline-2">
+<h2 id="orgdbe466b">Org-mode links</h2>
+<div class="outline-text-2" id="text-orgdbe466b">
+<p>
+:PROPERTIES:&#x2026;
+</p>
+
+<p>
+In an org-mode file, you can press <code>C-c l</code> to store a pointer to wherever you
+are in the file. Then, with (or without) text highlighted hit <code>C-C C-l</code> to make
+it into a link.
+The example file for Magit
+If you don&rsquo;t want to store a pointer (ie, link to a website or something), you
+can just hit <code>C-c C-l</code> and type or paste the link. To manually create a link, do
+something like:
+</p>
+
+<p>
+The Denver Emacs Meetup Group
+</p>
+
+<p>
+Writequit site
+</p>
+
+<p>
+Google&rsquo;s web site
+</p>
+
+<p>
+(ignore the *_SRC blocks for now, we&rsquo;ll get there)
+</p>
+
+<div class="org-src-container">
+<pre class="src src-fundamental">[[http://google.com/][Google]]
+</pre>
+</div>
+
+<p>
+You can link to files, images, websites, emails, irc, and all kinds of things.
+</p>
+</div>
+</section>
+
+<section id="outline-container-orgbd2f398" class="outline-2">
+<h2 id="orgbd2f398">Various things you can add in headers</h2>
+<div class="outline-text-2" id="text-orgbd2f398">
+<p>
+One of the most common uses for org-mode is a sort of &ldquo;task list&rdquo; or TODO list.
+Org-mode supports this by allowing markers in the headline for the state of a
+task. Let&rsquo;s look at an example:
+</p>
+</div>
+
+<div id="outline-container-orgb59d4de" class="outline-3">
+<h3 id="orgb59d4de">Learn about org-mode</h3>
+</div>
+
+<div id="outline-container-orgd84568c" class="outline-3">
+<h3 id="orgd84568c">Adding tags and priorities</h3>
+<div class="outline-text-3" id="text-orgd84568c">
+<p>
+You can add tags by putting them surrounded in &ldquo;:&rdquo; in the headline.
+Additionally, priorities
+</p>
+</div>
+
+<div id="outline-container-org99c6963" class="outline-4">
+<h4 id="org99c6963">Headline with a tag&#xa0;&#xa0;&#xa0;<span class="tag"><span class="org">org</span></span></h4>
+</div>
+
+<div id="outline-container-org2d1902d" class="outline-4">
+<h4 id="org2d1902d">Another tagged headline&#xa0;&#xa0;&#xa0;<span class="tag"><span class="turing">turing</span>&#xa0;<span class="denver">denver</span></span></h4>
+</div>
+
+<div id="outline-container-org58a9a3a" class="outline-4">
+<h4 id="org58a9a3a">Headline with multiple tags&#xa0;&#xa0;&#xa0;<span class="tag"><span class="org">org</span>&#xa0;<span class="emacs">emacs</span></span></h4>
+<div class="outline-text-4" id="text-org58a9a3a">
+<p>
+Tags are just another way of organizing things.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf33159b" class="outline-4">
+<h4 id="orgf33159b">Important task</h4>
+</div>
+<div id="outline-container-orgfbc38d8" class="outline-4">
+<h4 id="orgfbc38d8">Medium task</h4>
+</div>
+<div id="outline-container-org14fd746" class="outline-4">
+<h4 id="org14fd746">Non-important task</h4>
+<div class="outline-text-4" id="text-org14fd746">
+<p>
+Again you can configure these, or just use the 3 built in ones.
+</p>
+</div>
+</div>
+<div id="outline-container-orgdfd949f" class="outline-4">
+<h4 id="orgdfd949f">Task with sub headlines (percent cookie)</h4>
+</div>
+</div>
+</section>
+
+<section id="outline-container-org060f01a" class="outline-2">
+<h2 id="org060f01a">The TODO-planner payoff</h2>
+<div class="outline-text-2" id="text-org060f01a">
+<p>
+:PROPERTIES:&#x2026;
+So TODOs are all well and good, but what is a really neat feature is when you
+can easily capture new TODOs and display them easily.
+</p>
+
+<p>
+In order to do this, let&rsquo;s configure a couple of Emacs options in your emacs init:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">require</span> '<span class="org-constant">org</span>)
+<span class="org-comment-delimiter">;; </span><span class="org-comment">Setup C-c c to capture new TODOs</span>
+(global-set-key (kbd <span class="org-string">"C-c c"</span>) 'org-capture)
+<span class="org-comment-delimiter">;; </span><span class="org-comment">Setup a key bind for the agenda</span>
+(global-set-key (kbd <span class="org-string">"C-c a"</span>) 'org-agenda)
+<span class="org-comment-delimiter">;; </span><span class="org-comment">Set up agenda to know about our file, you can use a list of files or</span>
+<span class="org-comment-delimiter">;; </span><span class="org-comment">directories here</span>
+(<span class="org-keyword">setq</span> org-agenda-files '(<span class="org-string">"~/todo.org"</span>))
+<span class="org-comment-delimiter">;; </span><span class="org-comment">A new template</span>
+(<span class="org-keyword">setq</span> org-capture-templates
+      '((<span class="org-string">"t"</span> <span class="org-string">"Todo"</span> entry (file <span class="org-string">"~/todo.org"</span>)
+         <span class="org-string">"* TODO %?\n%U\n"</span>)))
+</pre>
+</div>
+
+<p>
+Now, hit <code>C-c c</code> to bring up the capture template list, then <code>t</code> to capture a
+new TODO item.
+</p>
+
+<p>
+Once you&rsquo;ve captured a few TODOs, you can try out the agenda by hitting <code>C-c a</code>,
+which will prompt for what agenda you&rsquo;d like to see, for now hit <code>t</code> to see the
+TODO list agenda.
+</p>
+</div>
+</section>
+
+<section id="outline-container-org37e87ba" class="outline-2">
+<h2 id="org37e87ba">Exporting an org-mode buffer</h2>
+<div class="outline-text-2" id="text-org37e87ba">
+<p>
+Org has a lot of export options, they are all contained behind a <code>C-c C-e</code>
+export backend, exporting to HTML, markdown, plain text, pdf, etc.
+</p>
+</div>
+</section>
+
+<section id="outline-container-org3dd79ec" class="outline-2">
+<h2 id="org3dd79ec">Show off other features of org-mode if we have more time</h2>
+<div class="outline-text-2" id="text-org3dd79ec">
+<p>
+Maybe not in excruciating detail, but we can show off the power and cover it in
+more detail at a later time:
+</p>
+
+<ul class="org-ul">
+<li>refiling (<code>org-refile</code>)</li>
+<li>source code blocks</li>
+<li>org-babel</li>
+<li>clocking in/out</li>
+<li>table formulas</li>
+<li>custom agenda views</li>
+<li>capturing notes (not just TODOs)</li>
+<li>publishing projects remotely via TRAMP</li>
+</ul>
+
+<div class="LaTeX" id="org8dbe488">
+<p>
+\(a + b\)
+</p>
+
+</div>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span class="org-keyword">defun</span> <span class="org-function-name">my/function</span> ()
+  <span class="org-doc">"docstring"</span>
+  (<span class="org-keyword">interactive</span>)
+  (<span class="org-keyword">progn</span>
+    (+ 1 1)
+    (message <span class="org-string">"Hi"</span>)))
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sh"><span class="org-builtin">echo</span> $<span class="org-variable-name">data</span> &gt; /tmp/foo
+<span class="org-keyword">for</span> i<span class="org-keyword"> in</span> <span class="org-sh-quoted-exec">`cat /tmp/foo`</span>; <span class="org-keyword">do</span>
+  <span class="org-builtin">echo</span> $<span class="org-variable-name">i</span>
+<span class="org-keyword">done</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sh" id="org89d55b7"><span class="org-builtin">echo</span> <span class="org-string">"hi"</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-sh"><span class="org-comment-delimiter"># </span><span class="org-comment">do some things</span>
+<span class="org-builtin">echo</span> <span class="org-string">"stuff"</span>
+<span class="org-builtin">echo</span> <span class="org-string">"more stuff"</span>
+<span class="org-builtin">echo</span> &lt;&lt;hi&gt;&gt;
+</pre>
+</div>
+
+<p>
+To enter and edit a block of text, use <code>C-c C-'</code>
+</p>
+</div>
+</section>
+</main>
+<footer id="postamble" class="status">
+<div id="footer">
+<div class="footer-info">
+<p>Copyright <a href="/">author</a>, Proudly build with <a href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a> and <a href="https://orgmode.org" target="_blank">Org</a> Mode.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
