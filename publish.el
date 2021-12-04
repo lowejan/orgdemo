@@ -4,7 +4,6 @@
 			 ("gnu" . "https://elpa.gnu.org/packages/")
 			 ("melpa" . "https://melpa.org/packages/")
 			 ("nongnu" . "https://elpa.nongnu.org/nongnu/")
-			 ;("org" . "http://orgmode.org/elpa/")
 			 ))
 (package-refresh-contents)
 (package-install 'org-contrib)
@@ -203,7 +202,6 @@ CONTENT: string to add."
 	("content"
          :base-directory "./content/"
          :base-extension "org"
-	 ;:exclude "recentposts.org"
          :publishing-directory "./public"
          :publishing-function org-html-publish-to-html
 	 :htmlized-source t
@@ -218,6 +216,7 @@ CONTENT: string to add."
         ("assets"
          :base-directory "./assets/"
          :base-extension ,site-attachments
+	 :include ("CNAME")
          :publishing-directory "./public"
          :publishing-function org-publish-attachment
          :recursive t
