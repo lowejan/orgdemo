@@ -9,5 +9,5 @@ Hi all! This is my personal website, welcome!
 
 ** Recent posts
 
-- See [[/blog/][more]]...
+- See [[./blog/][more]]...
 

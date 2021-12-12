@@ -67,7 +67,7 @@
 (defvar my-website-url "https://example.com")
 (defvar my-blog-url "https://example.com/blog")
 
-(defun my-blog-index (title list)
+(defun lujok/blog-index (title list)
   (mapconcat
    'identity
    (list
@@ -75,7 +75,7 @@
     (org-list-to-subtree list nil '(:istart "** ")))
    "\n\n"))
 
-(defun my-sitemap-format-entry (entry style project)
+(defun lujok/sitemap-format-entry (entry style project)
   (format "
     [[file:%s][%s]]
     #+begin_article-info
@@ -124,7 +124,7 @@ TITLE is the title of the RSS feed.  LIST is an internal
 representation for the files to include, as returned by
 `org-list-to-lisp'.  PROJECT is the current project."
   (concat "#+TITLE: " title "\n\n"
-          (org-list-to-subtree list 10 '(:icount "" :istart ""))))
+          (org-list-to-subtree list 50 '(:icount "" :istart ""))))
 
 (defun lujok/org-rss-publish-to-rss (plist filename pub-dir)
   "Publish RSS with PLIST, only when FILENAME is 'rss.org'.
@@ -194,8 +194,8 @@ CONTENT: string to add."
 	 :auto-sitemap t
 	 :sitemap-filename "index.org"
 	 :sitemap-title "My Blog"
-	 :sitemap-function my-blog-index
-	 :sitemap-format-entry my-sitemap-format-entry
+	 :sitemap-function lujok/blog-index
+	 :sitemap-format-entry lujok/sitemap-format-entry
 	 :sitemap-style list
 	 :sitemap-sort-files anti-chronologically
 	 )
