@@ -12,7 +12,7 @@
 
 (require 'org)
 (require 'ox-publish)
-(require 'ox-rss)
+;(require 'ox-rss) ;there's no ox-rss.el in org-contrib
 (require 'dash)
 
 ;; Set default settings
